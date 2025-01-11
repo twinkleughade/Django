@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #navbar ul{
+            background-color: black;
+            display: flex;
+        }
+        #navbar ul li{
+            list-style: none;
+            margin: 20px;
+            padding: 10px;
+        }
+        #navbar ul li a{
+            color: white;
+            font-size: 30px;
+        }
+    </style>  
+</head>
+<body>
+    <nav id="navbar">
+        <ul>
+            <li><a href='{% url "home" %}'>Home</a></li>
+            <li><a href='{% url "about" %}'>About</a></li>
+            <li><a href='{% url "contact" %}'>Contact</a></li>
+            <li><a href='{% url "register" %}'>Register</a></li>
+            <li><a href='{% url "login" %}'>Login</a></li>            
+        </ul>
+    </nav>
+    <div style="width: 100vw; height: 100vh; border: 1px solid black; background-color: cornflowerblue;">
+    {% block content %}
+    
+    {% endblock %}
+</div>
+    <footer>
+        <div>footer</div>
+    </footer>
+</body>
+</html>
