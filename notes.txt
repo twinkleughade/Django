@@ -1,0 +1,26 @@
+                                                21/03/2025
+                                            For Virtual environment 
+Virtual-Environment-
+                py -m venv env
+                cd env
+                cd Scripts
+                ./activate   .\activate   .activate  (any commond will work depends on your sysyem)
+
+Scripts Enable Restricted to unRestricted -
+                open Window PowerShell 
+                run as administrator
+                set-executionpolicy
+                get-executionpolicy
+                unRestricted(Restricted for disable)
+                Y 
+                                                23/03/2025
+                                            for Django install
+Installation-
+                cd../../(for going back we should use it)
+                pip install(i) Django
+                                                                                ctrl+`(backtic)--->for open terminal
+                                                                                
+
+
+
+
