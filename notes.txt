@@ -1,10 +1,41 @@
+Django---->     provides pre-defined structure
+                Django is a framework. it is used for web development. it is a third party application.
+                all package will be on pypy (.org is a original site)
+                for image- pillow library 
+                for error- stact overflow 
+
                                                 21/03/2025
                                             For Virtual environment 
 Virtual-Environment-
-                py -m venv env
+                py -m venv env   or python -m venv env(project name)
                 cd env
                 cd Scripts
                 ./activate   .\activate   .activate  (any commond will work depends on your sysyem)
+
+                Environment folder structure- 
+                                            include-
+                                                    directary
+                                                    empty
+                                                    c,c++ package
+                                            Lib-
+                                                    library
+                                                    python-related package
+                                                    lib/site-package/
+                                                                    pip(default)   python related package
+                                            Scripts-
+                                                    acticated or deactivated  of responsive files
+                                                    enable and disable scripts is responsive  
+                                            pyvenv.ctg-
+                                                    python virtual environmrnt cognitive files
+
+                with direct CMD-
+                                mkdir new1 (enter)
+                                cd new1 (enter)
+                                py -m venv env (project name) (enter)
+                                cd envcd scripts  (enter)
+                                ./activate  .\activate   .activate  (any commond will work depends on your sysyem)
+
+                We dont need to internet for making virtual environment 
 
 Scripts Enable Restricted to unRestricted -
                 open Window PowerShell 
@@ -17,10 +48,55 @@ Scripts Enable Restricted to unRestricted -
                                             for Django install
 Installation-
                 cd../../(for going back we should use it)
-                pip install(i) Django
+                pip install Django
                                                                                 ctrl+`(backtic)--->for open terminal
+                inside Django-
+                                asgi-               asynchronous server gateway interface
+                                sqlparse-           dependant on sql queries      
+                                tzdata-             time zone/ all over word  (python work in which country we work 
+                                                    asia/culcutta/database of time zone)
+                                Django-             for framework
+                                typing-extension-   for typing
+
+                for uninstall - pip uninstall Django
+                
                                                                                 
 
+                                                24/03/2025
+                                            for project making
+Making project-
+                django-admin startproject project(project name)
+
+                project-
+                        project- root project folder (root structure project)
+                        maange-inner project folder (root manage folder structure)
+                        we can not rename of the project name                       
+                maange.py-
+                        utility tool
+                        it is the heart of python
+                
+                root project folder-
+                                        django-admin startproject project
+                                        cd project
+                                        py manage.py
+                                        
+                        inner project folder-
+                                files-
+                                        _init_py-        it is empty file it treat as package
+                                        asgi-            asynchronous server getway interface
+                                        setting-         after setting request goes to url it is responsive foe any work
+                                        wsgi.py-         web server gateway interface(bydefault)first get request and go for setting
+
+                                        entry point/exit point- _init_py
+                                                                wsgi.py
+                                        after taking response -url.py
+                                                                setting.py
+                                                                wsgi.py
+
+                                        in urls for app- from app import view 
+                                        
+
+                
 
 
 
