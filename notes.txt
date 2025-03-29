@@ -93,7 +93,7 @@ Making project-
                                                                 setting.py
                                                                 wsgi.py
 
-                                        in urls for app- from app import view 
+                                        
                                         
 
                 
