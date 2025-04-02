@@ -3,7 +3,13 @@ from django.http import HttpResponse, JsonResponse
 
 # Create your views here.
 def home(request):
-    return render(request,'home.html')
+    # data={'name':'twinkle', 'age':26, 'quali':'Mtech'}
+    data=[{'name':'twinkle', 'age':26, 'quali':'Mtech'},{'name':'twink', 'age':26, 'quali':'Btech'}]
+    user={'name':'twi','city':'bhopal'}
+    # return render(request,'home.html', data)
+    # return render(request,'home.html', {'key1':data})
+    return render(request,'home.html',{'key1':user, 'key2':data})
+  
 def index(request):
     return redirect('http://www.google.com')
 def textcontent(request):
