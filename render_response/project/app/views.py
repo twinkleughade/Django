@@ -4,7 +4,15 @@ from django.http import HttpResponse
 # Create your views here.
 def home(request):
     # return redirect('/index/')
-    return redirect('/index/')
+    name,city='twinkle','bhopal'
+    # return redirect(f'/index/?name={name}&city={city}')
+    return redirect('/index/?name={}&city={}.format(name,city)')
 
 def index(request):
-    return HttpResponse("hello through redirect")
+    print(request.method)
+    print(request.GET)
+    x=request.GET.get('name')
+    y=request.GET.get('city')
+    print(x,y)
+
+    # return HttpResponse("hello through redirect")
