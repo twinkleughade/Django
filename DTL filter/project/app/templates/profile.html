@@ -1,0 +1,43 @@
+<h1>Hello, {{ name|capfirst}}</h1>
+{% comment %} <p>Hobbies: {{hobbies|center:"5"}}</p> {% endcomment %}
+<p>age:{{age|add:"2"}}</p>
+{% comment %} <p>class:{{class|ljust:"10"}}</p> {% endcomment %}
+{% comment %} <p>class:{{class|rjust:"10"}}</p> {% endcomment %}
+<p>quote:{{quote|cut:"hello"}}</P>
+<p>age:{{ age|default:"nothing" }}</p>
+<p>age:{{ age|divisibleby:"3" }}</p>
+<p>name:{{ name|join:" // " }}</p>
+<p>number:{{ number|last }}</P>
+<p>number:{{ number|length }}</p>
+{% comment %} <p>about:{{ about|linenumbers }}</p> {% endcomment %}
+<p>quote:{{quote|lower}}</P>
+<p>quote:{{quote|upper}}</P>
+<p>number:{{ number|random }}</p>
+<p>number:{{ number|slice:":2" }}</p>
+<p>quote:{{quote|slugify}}</P>
+<p>quote:{{quote|title}}</P>
+{% comment %} <p>quote:{{quote|truncatechars:1}}</P> {% endcomment %}
+<p>quote:{{quote|truncatewords:1}}</P>
+<p>quote:{{quote|wordcount}}</P>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      

@@ -1,5 +1,13 @@
 {% extends 'base.html' %}
+{% load static %}
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/home.css' %}">
+{% endblock %}
+
 
 {% block title %} about page {% endblock %}
 
-{% block content %} this is about page {% endblock %}
+
+{% block content %} 
+<div><img src="{% static 'images/sunrise.jpg' %}" alt=""></div>
+{% endblock %}
