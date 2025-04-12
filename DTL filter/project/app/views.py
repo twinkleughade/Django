@@ -5,14 +5,15 @@ from django.shortcuts import render
 def profile(request):
     about = {
         'name': 'twinkle',
-        'hobbies': ['photography', 'scabbooking', 'painting'],
+        'hobbies': 'photography',
         'age':21,
         'class':'django',
         'quote':'hello everyone',
-        'name':'saboo',
-        'number':['a','b','c'],   
+        'number':['a','b','c']   
     }
     
 
+    # return render(request,'profile.html',about)
     return render(request,'profile.html',about)
+
 

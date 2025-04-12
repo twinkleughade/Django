@@ -1,5 +1,6 @@
 <h1>Hello, {{ name|capfirst}}</h1>
-{% comment %} <p>Hobbies: {{hobbies|center:"5"}}</p> {% endcomment %}
+<p>Hobbies: {{hobbies|center:50}}</p>
+<textarea>{{ hobbies|rjust:50 }}</textarea>
 <p>age:{{age|add:"2"}}</p>
 {% comment %} <p>class:{{class|ljust:"10"}}</p> {% endcomment %}
 {% comment %} <p>class:{{class|rjust:"10"}}</p> {% endcomment %}
@@ -16,9 +17,11 @@
 <p>number:{{ number|slice:":2" }}</p>
 <p>quote:{{quote|slugify}}</P>
 <p>quote:{{quote|title}}</P>
-{% comment %} <p>quote:{{quote|truncatechars:1}}</P> {% endcomment %}
+
+<p>quote:{{quote|truncatechars:1}}</P>
 <p>quote:{{quote|truncatewords:1}}</P>
 <p>quote:{{quote|wordcount}}</P>
+
 
 
 
