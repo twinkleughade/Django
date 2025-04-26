@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+ Welcomee to dashboard
+
+ {{userdata.name}}
+ <hr>
+ {{userdata.id}}
+<div class="sidebar">
+    <h2>CoffeeDash</h2>
+    <a href="#">Dashboard</a>
+    <a href="#">Orders</a>
+    <a href="#">Menu</a>
+    <a href="#">Customers</a>
+    <a href="#">Settings</a>
+  </div>
+
+  <div class="main">
+    <div class="topbar">
+      <input type="text" placeholder="Search...">
+      <div>User 👤</div>
+    </div>
+
+    <div class="dashboard">
+      <div class="card">
+        <h3>Today's Sales</h3>
+        <p>$1,240</p>
+      </div>
+      <div class="card">
+        <h3>Orders</h3>
+        <p>87</p>
+      </div>
+      <div class="card">
+        <h3>New Customers</h3>
+        <p>24</p>
+      </div>
+      <div class="card">
+        <h3>Most Popular</h3>
+        <p>Caramel Latte</p>
+      </div>
+    </div>
+  </div>
+
+{% endblock %}

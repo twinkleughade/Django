@@ -1,3 +1,4 @@
+ 
 /* Footer Styles */
 .coffee-footer {
     background-color: #3e2723;
@@ -30,17 +31,6 @@
     line-height: 1.6;
 }
 
-.social-icons a {
-    display: inline-block;
-    margin-right: 10px;
-}
-
-.social-icons img {
-    width: 24px;
-    height: 24px;
-    filter: brightness(0) invert(1); /* white icons */
-}
-
 .footer-bottom {
     text-align: center;
     padding-top: 20px;
@@ -48,8 +38,24 @@
     color: #d7ccc8;
     border-top: 1px solid #5d4037;
 }
+#footerLink{
+    color: white;
+    font-family: 'Arial', sans-serif;
+    margin: 5px;
+    font-size: 14px;
+}
 
-/* Responsive Media Query */
+#social-icons{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    
+}
+
+
+/* Responsive MediaQuery */
+
+
 @media (max-width: 768px) {
     .footer-container {
         flex-direction: column;
@@ -61,7 +67,5 @@
         margin-bottom: 20px;
     }
 
-    .social-icons a {
-        margin: 0 8px;
-    }
+    
 }

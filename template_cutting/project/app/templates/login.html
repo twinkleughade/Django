@@ -4,5 +4,18 @@
 
 {% block content %}
 login page
+<form action="{% url 'logindata' %}" method="post">
+    {% csrf_token%}
+    <label for="email">Email:</label>
+    <input type="email" name="email" placeholder="Enter your email" value="">
+    <br>
+    <label for="password">Password:</label>
+    <input type="password" name="password" value="">
+    <br>
+    <input type="submit" value="Submit">
+    {% comment %} make onr registration button for if not login {% endcomment %}
+
+
+</form>
 {% include 'base1.html' %}
 {% endblock %}

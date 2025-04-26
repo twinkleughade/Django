@@ -1,26 +1,78 @@
 /* Hero Section */
-.hero {
-    background: url('../images/coffee-hero.jpg') center/cover no-repeat;
-    color: #fff;
+/* #hero1{
+    background-color: #3e2723; 
+    color: white;
+    text-align: center; 
+    padding: 80px 20px;
+}
+#hero-text{
+    max-width: 600px;
+    margin: auto;
+}
+
+#hero-text h1{
+    font-size: 3rem;
+     margin-bottom: 20px;
+}
+
+#hero-text p{
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+#hero-text a{
+    background-color: #ff9800;
+    color: white; 
+    padding: 12px 24px; 
+    text-decoration: none; 
+    border-radius: 8px; 
+    font-weight: bold;
+} */
+
+
+
+
+
+#hero1{
+    background-image: url('../images/hero.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
     height: 90vh;
+    background-position: center;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    width: 100%;
+    margin: auto;
+} 
+#heroDiv{
+    width: 50%;
+}
+
+#hero-text{
+    width: 50%;
+    margin: auto;
     text-align: center;
-    padding: 0 20px;
 }
 
-.hero-text h1 {
-    font-size: 48px;
-    margin-bottom: 10px;
+#hero-text h1 {
+    font-size: 52px;
+   /* text-align: right; */
+   /* margin-right: 140px;
+   padding-top: 150px; */
+   color: white;
+} 
+
+
+#hero-text p {
+    font-size: 28px;
+    color:rgba(243, 136, 29, 0.577);
+    /* text-align: right; */
+   /* margin-right: 190px;
+   padding-top: 10px; 
+   margin-bottom: 30px;    */
 }
 
-.hero-text p {
-    font-size: 20px;
-    margin-bottom: 20px;
-}
-
-.btn {
+#btn{
+    
     background-color: #ff8f00;
     color: #fff;
     padding: 12px 25px;
@@ -28,10 +80,53 @@
     text-decoration: none;
     font-weight: bold;
     transition: background-color 0.3s ease;
+    /* margin-left: 1000px; */
+    
 }
 
 .btn:hover {
     background-color: #ff6f00;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero-text h1 {
+        font-size: 32px;
+    }
+
+    .hero-text p {
+        font-size: 16px;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 426px) {
+    #hero-text h1 {
+        font-size: 32px;
+       color: white;
+    } 
+    #heroDiv{
+        display: none;
+    }
+
+    
+    #btn{
+        
+        background-color: #ff8f00;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 20px;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 14px;
+        transition: background-color 0.3s ease;
+        /* margin-left: 1000px; */
+        
+    }
 }
 
 /* Specials Section */
@@ -86,18 +181,4 @@
     color: #4e342e;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-    .hero-text h1 {
-        font-size: 32px;
-    }
 
-    .hero-text p {
-        font-size: 16px;
-    }
-
-    .cards {
-        flex-direction: column;
-        align-items: center;
-    }
-}
