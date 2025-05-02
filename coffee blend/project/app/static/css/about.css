@@ -30,7 +30,7 @@
   
   .content {
     display: flex;
-    gap: 2rem;
+    gap: 32px;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -48,25 +48,25 @@
   }
   
   .text h2 {
-    font-size: 2rem;
+    font-size: 32px;
     margin-bottom: 0.75rem;
   }
   
   .text p {
-    font-size: 1.1rem;
+    font-size: 17.6px;
     line-height: 1.6;
-    margin-bottom: 1rem;
+    margin-bottom: 18px;
     color: #4e342e;
   }
   
   /* === Responsive Styling === */
   @media (max-width: 768px) {
     h1 {
-      font-size: 2.2rem;
+      font-size: 35.2px;
     }
   
     .intro {
-      font-size: 1.1rem;
+      font-size: 17.6px;
     }
   
     .content {
@@ -75,11 +75,11 @@
     }
   
     .text h2 {
-      font-size: 1.6rem;
+      font-size: 25.6px;
     }
   
     .text p {
-      font-size: 1rem;
+      font-size: 18px;
     }
   
     .content img {
@@ -92,32 +92,32 @@
 .values,
 .team,
 .cta {
-  margin-top: 2.5rem;
+  margin-top: 40px;
 }
 
 .mission h2,
 .values h2,
 .team h2,
 .cta h2 {
-  font-size: 1.8rem;
-  margin-bottom: 0.75rem;
+  font-size: 28.8px;
+  margin-bottom: 11.84px;
   color: #3e2c27;
 }
 
 .values ul {
   list-style-type: square;
-  padding-left: 1.5rem;
+  padding-left: 24px;
 }
 
 .values li {
-  margin-bottom: 0.75rem;
-  font-size: 1.05rem;
+  margin-bottom: 11.84px;
+  font-size: 16.8px;
   color: #4e342e;
 }
 
 .cta p {
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: 19.2px;
   text-align: center;
 }
 
@@ -127,14 +127,14 @@
   .values h2,
   .team h2,
   .cta h2 {
-    font-size: 1.5rem;
+    font-size: 24px;
   }
 
   .values ul {
-    padding-left: 1rem;
+    padding-left: 18px;
   }
 
   .cta p {
-    font-size: 1.1rem;
+    font-size: 17.6px;
   }
 }

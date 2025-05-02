@@ -75,8 +75,8 @@ def logindata(request):
         user=student.objects.filter(stu_email=email)
         if user:
             userdata=student.objects.get(stu_email=email)
-            print(userdata.stu_name)
-            print(userdata.stu_email)
+            # print(userdata.stu_name)
+            # print(userdata.stu_email)
             pass1=userdata.stu_pass
             if passw==pass1:
                 dmsg="Welcome to Dashboard"
