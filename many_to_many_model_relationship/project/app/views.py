@@ -8,7 +8,7 @@ def fueltype(request):
     print(all_data)
 
 def cartype(request):
-    # forward access( carmodel + fueltypemodel)
+    # forward access(carmodel + fueltypemodel)
     car=CarModel.objects.get(car_name='Swift')
     fuel_types=car.fuel_name.all()
 
