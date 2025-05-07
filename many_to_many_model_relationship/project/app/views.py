@@ -22,6 +22,7 @@ def cartype(request):
 
     for car in cars_using_petrol:
         print(car.car_name)
+        
 
 
 

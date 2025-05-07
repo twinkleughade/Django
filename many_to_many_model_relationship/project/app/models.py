@@ -23,3 +23,4 @@ class CarModel(models.Model):
     fuel_name=models.ManyToManyField(FuelTypeModel,related_name="cars")
     def __str__(self):
         return self.car_name
+    

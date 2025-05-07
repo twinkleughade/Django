@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>landing</title>
+</head>
+<body>
+<h1>landing page</h1>
+{% if not data %}
+
+    <div>
+    <a href="{%  url 'first' %}">First 5 student</a>
+    <br/>
+    <a href="{%  url 'asc' %}">All_Student ascending by name</a>
+    <br/>
+    <a href="{% url 'last_5' %}">last_5</a>
+    <br/>
+    <a href="{% url 'desc' %}">All_Student descending by name</a>
+    <br/>
+    <a href="{% url 'all' %}">All Student</a>
+    </div>  
+{% else %}
+    
+      <a href="{% url 'landing' %}">Back</a>
+    <table border="1">
+        <tr>
+            <th>S.No</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Contact</th>
+            <th>City</th>
+        </tr>
+        {% for i in data %}
+        <tr>
+            <td>{{forloop.counter}}</td>
+            <td>{{i.name}}</td>
+            <td>{{i.email}}</td>
+            <td>{{i.contact}}</td>
+            <td>{{i.city}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+{% endif %}
+
+
+   
+</body>
+</html>

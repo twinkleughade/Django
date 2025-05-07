@@ -9,6 +9,6 @@ class student(models.Model):
     stu_dob=models.DateField()
     stu_edu=models.CharField(max_length=50)
     stu_gender=models.CharField(max_length=50)
-    Stu_image=models.ImageField(upload_to='image/')
+    stu_image=models.ImageField(upload_to='image/')
     stu_document=models.FileField(upload_to='file/')
     stu_pass=models.CharField(max_length=50)

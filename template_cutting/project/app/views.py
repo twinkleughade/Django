@@ -17,7 +17,7 @@ def home1(request,pk):
         "dob":userdata.stu_dob,
         "edu":userdata.stu_edu,
         "gender":userdata.stu_gender,
-        "image":userdata.Stu_image,
+        "image":userdata.stu_image,
         "document":userdata.stu_document,
         "pass":userdata.stu_pass, 
     }
@@ -88,7 +88,7 @@ def logindata(request):
                     "dob":userdata.stu_dob,
                     "edu":userdata.stu_edu,
                     "gender":userdata.stu_gender,
-                    "image":userdata.Stu_image,
+                    "image":userdata.stu_image,
                     "document":userdata.stu_document,
                     "pass":userdata.stu_pass,                   
                 }
